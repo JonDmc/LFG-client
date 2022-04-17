@@ -48,7 +48,7 @@ export default function Register ({ currentUser, setCurrentUser, setUsers }) {
     }
   }
 
-  if (currentUser) return <Navigate to='/' />
+  // if (currentUser) return <Navigate to='/' />
   return (
     <>            
     <div className='flex-container'>

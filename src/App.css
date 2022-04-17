@@ -556,6 +556,7 @@ button {
   margin-left: 2px;
   width: 60px;
 }
+<<<<<<< HEAD
 .card-container {
   display: flex;
   flex-direction: row;  
@@ -604,6 +605,7 @@ button {
   overflow-x: hidden;
   padding: 10px;
   background-color: var(--blue);
+  height: 100vh;
 }
 .profile-container {
   display: flex;  
@@ -626,6 +628,7 @@ button {
   height: fit-content;
   width: 100vw;
 }
+
 .gameName-parties{
   display: flex;
   flex-direction: row;
