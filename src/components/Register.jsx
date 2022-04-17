@@ -2,7 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 import { useNavigate, Navigate } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 export default function Register ({ currentUser, setCurrentUser, setUsers }) {
   const navigate = useNavigate();
@@ -107,9 +107,9 @@ export default function Register ({ currentUser, setCurrentUser, setUsers }) {
           </button>
           <p style={{fontSize: "14px", color: "white"}}>
             Already have an account?{" "}
-            <a style={{color: "white"}} href="/login" className="a-tag">
+            <Link style={{color: "white"}} to="/login" className="a-tag">
               Login
-            </a>
+            </Link>
             </p>
           </form>
           {message ? <p style={{fontWeight:200, color: "red"}} className="error-message">{message}</p> : <></>}

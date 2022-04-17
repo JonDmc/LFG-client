@@ -1,6 +1,7 @@
 import { useState } from "react"
 import axios from "axios"
 import jwt_decode from "jwt-decode"
+import { Link } from "react-router-dom"
 import { Navigate } from "react-router-dom"
 // import "../layout/Login.css"
 
@@ -80,9 +81,9 @@ export default function Login({ currentUser, setCurrentUser }) {
           </button>
           <p style={{fontSize: "14px", color: "white"}}>
             Don't have an account?{" "}
-            <a style={{color: "white"}} href="/signup" className="a-tag">
+            <Link style={{color: "white"}} to="/signup" className="a-tag">
               Create one
-            </a>
+            </Link>
           </p>
         </form>
 
