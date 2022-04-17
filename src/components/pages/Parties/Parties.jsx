@@ -39,7 +39,7 @@ export default function Parties({ parties, currentParties, setCurrentParties, cu
   <>
     <div className="navbar-party">    
     {/* <div className='header-on-dark'><h1>{currentGame.name}</h1></div> */}
-    <div className='header-on-dark'><img width={'250px'} src={`${currentGame.image}`}></img></div>
+    <div className='header-on-dark'><img width={'250px'} src={`${currentGame.image}`} alt={`${currentGame.name}`}></img></div>
     <div style={{textAlign: "center"}}>
       <h4 style={{marginBottom: 0}}>Search parties</h4>
       <input style={{height:'40px', fontSize: "11px",width:"250px"}} type="text" placeholder={`search ${currentGame.name} parties`} value={search} onChange={(e)=> setSearch(e.target.value)}/>
