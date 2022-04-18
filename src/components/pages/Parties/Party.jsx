@@ -35,7 +35,7 @@ function Party({
   }, [currentParty])
 
   if (!currentUser) return <Navigate to='/login' />
-  
+
   const handleDeleteParty = async () => {
     try {
       await axios
@@ -112,8 +112,14 @@ function Party({
           setCurrentParty={setCurrentParty}
         />
       </div>
-
-      <MessageBoards currentUser={currentUser} currentParty={currentParty} />
+      {filteredMember != 0 ?
+        <MessageBoards currentUser={currentUser} currentParty={currentParty} />
+        :
+        <>
+          <h2>Message Board Access: Denied!</h2>
+          <h3>Please Join the party first!</h3>
+        </>
+      }
     </>
   )
 }
