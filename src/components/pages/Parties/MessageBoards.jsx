@@ -86,7 +86,7 @@ export default function MessageBoards({ currentUser, currentParty }) {
             <div className='message-footer'>
                 <form onSubmit={handleFormSubmit}>
                     <label htmlFor='message' className="msg-ele"></label>
-                    <textarea className='msg-ele' type='text' id='message' value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} onFocus={() => setFetchMsg(!fetchMsg)} />
+                    <textarea className='msg-ele' type='text' id='message' value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} onFocus={() => setFetchMsg(!fetchMsg)} required />
                     <button type='submit'>Send</button>
                 </form>
             </div>
