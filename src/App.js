@@ -13,7 +13,7 @@ import Layout from './components/layouts/Layout';
 import Navibar from './components/layouts/Navibar';
 import CreateParty from './components/pages/Parties/CreateParty';
 import EditParty from './components/pages/Parties/EditParty'
-import Search from './components/pages/API/Search';
+
 
 function App() {
   const [currentUser, setCurrentUser] = useState({
@@ -107,8 +107,8 @@ function App() {
               element={<EditParty currentGame={currentGame} currentUser={currentUser} currentParty={currentParty} />}
           />
           <Route
-            path='/api'
-            element={<Search />}
+            path='/search'
+            element={<SearchGames />}
           />
         </Routes>
         </Layout>
